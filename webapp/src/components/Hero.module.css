@@ -169,3 +169,35 @@
     transform-origin: top center;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 7rem 1.5rem 3rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .subtitleWrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .arrowIcon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .visuals {
+    height: 300px;
+    transform: scale(0.65);
+    margin-top: -2rem;
+  }
+}

@@ -130,3 +130,29 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 1.2rem;
+  }
+  
+  .navbarWrapper {
+    padding: 1rem 1rem 0;
+  }
+
+  .header {
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+  }
+
+  .btnPrimary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .logoCircle {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}
