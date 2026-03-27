@@ -1,0 +1,132 @@
+.navbarWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 2rem 0; /* Space to make it float */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem 0.8rem 2rem;
+  width: 100%;
+  max-width: 1300px;
+  background-color: #ffffff;
+  border-radius: 100px; /* Pill shape */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* Float shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logoCircle {
+  background-color: #ff7862; /* Coral from footer */
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+  margin-top: -2px;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+  font-family: 'Georgia', serif;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLink {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #ff7862;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lang {
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.menuBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.2s;
+  color: var(--text-main);
+}
+
+.menuBtn:hover {
+  transform: scale(1.05);
+}
+
+.btnPrimary {
+  background-color: #1a1a1b; /* Dark pill button */
+  color: #ffffff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s, box-shadow 0.2s;
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(26, 26, 27, 0.3);
+}
+
+@media (max-width: 900px) {
+  .nav, .divider, .lang {
+    display: none;
+  }
+}

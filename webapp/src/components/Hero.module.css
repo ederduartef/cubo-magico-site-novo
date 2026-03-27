@@ -1,0 +1,171 @@
+.hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8rem 2rem 2rem; /* Increased top padding to avoid floating navbar overlap */
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid var(--text-main);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--text-main);
+}
+
+.highlight {
+  color: var(--accent-terracotta);
+}
+
+.subtitleWrapper {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.arrowIcon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* VISUALS SECTION */
+.visuals {
+  position: relative;
+  height: 600px;
+}
+
+.floatingCard {
+  position: absolute;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.iconWrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Conectado */
+.cardConectado {
+  width: 180px;
+  height: 180px;
+  background-color: #E9B44C;
+  top: 0;
+  left: 10%;
+  z-index: 2;
+  border-radius: 2rem;
+}
+
+/* Card Leveza */
+.cardLeveza {
+  width: 280px;
+  height: 280px;
+  background-color: #4D7C8A;
+  top: 40%;
+  left: 0;
+  z-index: 1;
+  border-radius: 2rem;
+}
+
+/* Card Saude */
+.cardSaude {
+  width: 220px;
+  height: 220px;
+  background-color: #C14949;
+  top: 15%;
+  right: 0;
+  z-index: 3;
+  border-radius: 2rem;
+}
+
+/* Badges */
+.cardBadgeConectado,
+.cardBadgeLeveza,
+.cardBadgeSaude {
+  position: absolute;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cardBadgeConectado {
+  background: white;
+  color: var(--text-main);
+  left: -20px;
+  top: 20px;
+}
+
+.cardBadgeLeveza {
+  background: white;
+  color: #4D7C8A;
+  right: -20px;
+  bottom: 30px;
+}
+
+.cardBadgeSaude {
+  background: white;
+  color: #C14949;
+  right: -30px;
+  top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 6rem 2rem 4rem; /* Increased top padding to avoid floating navbar overlap on mobile */
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .visuals {
+    height: 400px;
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+}

@@ -1,0 +1,130 @@
+.wrapper {
+  background-color: var(--bg-green);
+  padding: 6rem 2rem;
+  margin-top: 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.content {
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.badge {
+  border: 1px solid var(--text-light);
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  align-self: flex-start;
+  color: var(--text-light);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-light);
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-yellow);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardVisual {
+  background-color: #e5eee8;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  height: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.companyImage {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 5.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 7rem);
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* just a slight subtle shadow for depth */
+}
+
+.cardAction {
+  background-color: var(--accent-yellow);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  margin-top: auto;
+}
+
+.cardActionText {
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.actionIconBtn {
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.cardAction:hover .actionIconBtn {
+  transform: rotate(45deg);
+}
+
+.cardFooterText {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
