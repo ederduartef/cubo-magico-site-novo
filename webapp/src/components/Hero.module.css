@@ -200,4 +200,19 @@
     transform: scale(0.65);
     margin-top: -2rem;
   }
+
+  .cardConectado {
+    top: -10%;
+    left: 0%;
+  }
+  
+  .cardLeveza {
+    top: 60%;
+    left: -5%;
+  }
+  
+  .cardSaude {
+    top: 25%;
+    right: -15%;
+  }
 }
