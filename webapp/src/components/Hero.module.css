@@ -196,23 +196,23 @@
   }
 
   .visuals {
-    height: 300px;
-    transform: scale(0.65);
-    margin-top: -2rem;
+    height: 380px;
+    transform: scale(0.75);
+    margin-top: 2rem; /* Adiciona respiro para não bater no texto acima */
   }
 
   .cardConectado {
-    top: -10%;
+    top: 0%;
     left: 0%;
   }
   
   .cardLeveza {
-    top: 60%;
-    left: -5%;
+    top: 50%;
+    left: -10%;
   }
   
   .cardSaude {
     top: 25%;
-    right: -15%;
+    right: -10%;
   }
 }
