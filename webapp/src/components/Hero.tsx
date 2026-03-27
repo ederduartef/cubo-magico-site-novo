@@ -1,4 +1,4 @@
-import { ArrowDown, Heart, Smile, Sun, HouseWifi } from 'lucide-react';
+import { ArrowDown, Heart, Smile, HouseWifi } from 'lucide-react';
 import styles from './Hero.module.css';
 
 export function Hero() {
