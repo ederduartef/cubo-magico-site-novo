@@ -44,11 +44,17 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.2s;
+  transition: color 160ms ease-out, transform 160ms ease-out;
 }
 
-.navList a:hover {
-  color: var(--accent-yellow);
+.navList a:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navList a:hover {
+    color: var(--accent-yellow);
+  }
 }
 
 .langSelector {
@@ -147,16 +153,12 @@
   font-family: 'Georgia', serif;
 }
 
-.logoCircle {
-  background-color: #ff7862; /* Soft coral brand color */
-  width: 38px;
-  height: 38px;
+.logoImg {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: white;
+  background-color: transparent;
 }
 
 .badge {
@@ -223,12 +225,19 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 160ms ease-out, opacity 160ms ease-out;
   flex-shrink: 0;
 }
 
-.btnSubscribe:hover {
-  transform: scale(1.05);
+.btnSubscribe:active {
+  transform: scale(0.92);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btnSubscribe:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
 }
 
 /* --- Bottom Bar --- */
@@ -257,11 +266,17 @@
 .socials a {
   color: white;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 160ms ease-out, transform 160ms ease-out;
 }
 
-.socials a:hover {
-  color: #f7d154;
+.socials a:active {
+  transform: scale(0.92);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .socials a:hover {
+    color: #f7d154;
+  }
 }
 
 .copyright {
@@ -281,11 +296,18 @@
   font-size: 0.85rem;
   opacity: 0.8;
   font-weight: 500;
-  transition: opacity 0.2s;
+  transition: opacity 160ms ease-out, transform 160ms ease-out;
 }
 
-.links a:hover {
+.links a:active {
+  transform: scale(0.97);
   opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .links a:hover {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 900px) {

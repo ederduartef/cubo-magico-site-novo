@@ -28,17 +28,11 @@
   gap: 0.8rem;
 }
 
-.logoCircle {
-  background-color: #ff7862; /* Coral from footer */
-  width: 32px;
-  height: 32px;
+.logoImg {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: white;
-  margin-top: -2px;
 }
 
 .logoText {
@@ -65,12 +59,19 @@
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text-main);
-  transition: color 0.2s ease;
+  transition: color 160ms ease-out, transform 160ms ease-out;
   text-decoration: none;
 }
 
-.navLink:hover {
+.navLink:active {
+  transform: scale(0.97);
   color: #ff7862;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navLink:hover {
+    color: #ff7862;
+  }
 }
 
 .divider {
@@ -99,16 +100,22 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  transition: transform 0.2s;
+  transition: transform 160ms ease-out;
   color: var(--text-main);
 }
 
-.menuBtn:hover {
-  transform: scale(1.05);
+.menuBtn:active {
+  transform: scale(0.95);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menuBtn:hover {
+    transform: scale(1.05);
+  }
 }
 
 .btnPrimary {
-  background-color: #1a1a1b; /* Dark pill button */
+  background-color: #1a1a1b;
   color: #ffffff;
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
@@ -116,13 +123,22 @@
   font-size: 0.95rem;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 160ms ease-out, opacity 160ms ease-out, box-shadow 160ms ease-out;
 }
 
-.btnPrimary:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(26, 26, 27, 0.3);
+.btnPrimary:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btnPrimary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(26, 26, 27, 0.3);
+  }
 }
 
 @media (max-width: 900px) {
@@ -150,9 +166,8 @@
     font-size: 0.85rem;
   }
 
-  .logoCircle {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
+  .logoImg {
+    width: 72px;
+    height: 72px;
   }
 }

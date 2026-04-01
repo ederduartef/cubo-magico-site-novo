@@ -27,11 +27,18 @@
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--text-main);
-  transition: opacity 0.2s;
+  transition: opacity 160ms ease-out, transform 160ms ease-out;
 }
 
-.linkAll:hover {
+.linkAll:active {
+  transform: scale(0.97);
   opacity: 0.7;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .linkAll:hover {
+    opacity: 0.7;
+  }
 }
 
 .grid {
@@ -48,11 +55,23 @@
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0,0,0,0.03);
-  transition: transform 0.2s;
+  transition: transform 250ms ease-out;
+  animation: fadeIn 300ms ease-out both;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card:nth-child(1) { animation-delay: 0ms; }
+.card:nth-child(2) { animation-delay: 50ms; }
+.card:nth-child(3) { animation-delay: 100ms; }
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .quoteIcon {

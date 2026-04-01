@@ -38,7 +38,7 @@ export function Footer() {
         <div className={styles.rightColumn}>
           <div className={styles.brandBox}>
             <div className={styles.logo}>
-              <div className={styles.logoCircle}>✦</div>
+              <img src="/logo (3).png" alt="Cubo Mágico Logo" className={styles.logoImg} />
               Cubo Mágico Hub
             </div>
             <div className={styles.badge}>
@@ -64,10 +64,10 @@ export function Footer() {
       <div className={styles.bottomBarWrapper}>
         <div className={styles.bottomBar}>
           <div className={styles.socials}>
-            <a href="#"><span style={{fontWeight: 'bold'}}>twitter</span></a>
-            <a href="#"><span style={{fontWeight: 'bold'}}>instagram</span></a>
-            <a href="#"><span style={{fontWeight: 'bold'}}>tiktok</span></a>
-            <a href="#"><span style={{fontWeight: 'bold'}}>linkedin</span></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><span style={{fontWeight: 'bold'}}>twitter</span></a>
+            <a href="https://www.instagram.com/cubomagicohub?igsh=MTJmZXAyaTg5NTl3" target="_blank" rel="noopener noreferrer"><span style={{fontWeight: 'bold'}}>instagram</span></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><span style={{fontWeight: 'bold'}}>tiktok</span></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><span style={{fontWeight: 'bold'}}>linkedin</span></a>
           </div>
           <div className={styles.copyright}>
             © 2026 Cubo Mágico Hub | Todos os direitos reservados

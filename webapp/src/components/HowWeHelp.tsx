@@ -95,7 +95,14 @@ export function HowWeHelp() {
         <p className={styles.text}>
           Encontre o serviço ideal para suas necessidades: psicoterapia, avaliação, psicopedagogia e muito mais.
         </p>
-        <button className={styles.btnPrimary}>Falar com a nossa equipe &gt;</button>
+        <a
+          href="https://wa.me/5531982725880?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20equipe%20do%20Cubo%20M%C3%A1gico%20Hub.%20Podem%20me%20ajudar%3F"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.btnPrimary}
+        >
+          Falar com a nossa equipe &gt;
+        </a>
       </div>
     </section>
   );

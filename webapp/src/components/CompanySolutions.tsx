@@ -25,9 +25,14 @@ export function CompanySolutions() {
             />
             <div className={styles.cardAction}>
               <span className={styles.cardActionText}>Solicitar a proposta</span>
-              <button className={styles.actionIconBtn}>
+              <a
+                href="https://wa.me/5531982725880?text=Ol%C3%A1%2C%20sou%20representante%20de%20uma%20empresa%20e%20gostaria%20de%20solicitar%20uma%20proposta%20de%20atendimento%20corporativo%20com%20o%20Cubo%20M%C3%A1gico%20Hub.%20Pode%20me%20ajudar%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.actionIconBtn}
+              >
                 <ArrowUpRight size={20} color="var(--text-main)" />
-              </button>
+              </a>
             </div>
           </div>
           <p className={styles.cardFooterText}>
