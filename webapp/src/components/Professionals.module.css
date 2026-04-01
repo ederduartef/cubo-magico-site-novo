@@ -148,15 +148,13 @@
   font-weight: 800;
   line-height: 1.2;
   color: var(--text-main);
-  position: relative;
 }
 
 .quoteIcon {
-  color: var(--text-muted);
-  opacity: 0.5;
-  position: absolute;
-  left: -20px;
-  top: -20px;
+  display: block;
+  color: var(--accent-terracotta);
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
 }
 
 .highlight {

@@ -1,7 +1,7 @@
 .hero {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 8rem 2rem 2rem; /* Increased top padding to avoid floating navbar overlap */
+  padding: 11rem 2rem 2rem;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 4rem;
@@ -15,14 +15,16 @@
 }
 
 .badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   align-self: flex-start;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 2rem;
-  border: 1px solid var(--text-main);
-  font-size: 0.75rem;
+  background-color: var(--text-main);
+  color: #ffffff;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .title {

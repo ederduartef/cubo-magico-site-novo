@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1.5rem 2rem 0; /* Space to make it float */
+  padding: 1.5rem 4rem 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,12 +14,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 1rem 0.8rem 2rem;
+  padding: 0.8rem 1.5rem 0.8rem 2rem;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   background-color: #ffffff;
-  border-radius: 100px; /* Pill shape */
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* Float shadow */
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .logo {
