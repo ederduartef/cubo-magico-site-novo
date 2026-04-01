@@ -140,16 +140,17 @@ export function HowWeHelp() {
             <h3 className={styles.serviceTitle}>{service.title}</h3>
             <p className={styles.serviceDesc}>{service.description}</p>
             <div className={styles.badge}>SERVIÇOS EM DESTAQUE</div>
-          </div>
 
-          <div className={styles.indicators}>
-            {services.map((_, index) => (
-              <span
-                key={index}
-                className={`${styles.dot} ${index === currentIndex ? styles.dotActive : ''}`}
-                onClick={() => { goTo(index, index > currentIndex ? 'left' : 'right'); resetTimer(); }}
-              />
-            ))}
+            {/* Dots dentro do card para a cor preencher toda a área */}
+            <div className={styles.indicators}>
+              {services.map((_, index) => (
+                <span
+                  key={index}
+                  className={`${styles.dot} ${index === currentIndex ? styles.dotActive : ''}`}
+                  onClick={() => { goTo(index, index > currentIndex ? 'left' : 'right'); resetTimer(); }}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

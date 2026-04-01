@@ -158,7 +158,8 @@
   .hero {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 6rem 2rem 4rem; /* Increased top padding to avoid floating navbar overlap on mobile */
+    padding: 6rem 2rem 4rem;
+    /* Increased top padding to avoid floating navbar overlap on mobile */
   }
 
   .title {
@@ -174,7 +175,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 7rem 1.5rem 3rem;
+    padding: 10rem 1.5rem 3rem;
   }
 
   .title {
@@ -200,19 +201,20 @@
   .visuals {
     height: 380px;
     transform: scale(0.75);
-    margin-top: 2rem; /* Adiciona respiro para não bater no texto acima */
+    margin-top: 2rem;
+    /* Adiciona respiro para não bater no texto acima */
   }
 
   .cardConectado {
     top: 0%;
     left: 0%;
   }
-  
+
   .cardLeveza {
     top: 50%;
     left: -10%;
   }
-  
+
   .cardSaude {
     top: 25%;
     right: -10%;
