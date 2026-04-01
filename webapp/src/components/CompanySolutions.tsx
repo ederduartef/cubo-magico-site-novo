@@ -3,7 +3,7 @@ import styles from './CompanySolutions.module.css';
 
 export function CompanySolutions() {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="empresas">
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.badge}>ATENDIMENTO CORPORATIVO</div>

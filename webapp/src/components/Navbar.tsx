@@ -14,7 +14,7 @@ export function Navbar() {
           <nav className={styles.nav}>
             <a href="#servicos" className={styles.navLink}>Serviços</a>
             <a href="#empresas" className={styles.navLink}>Empresas</a>
-            <a href="#tratamentos" className={styles.navLink}>Tratamentos</a>
+            <a href="#profissionais" className={styles.navLink}>Profissionais</a>
           </nav>
 
           <div className={styles.divider}></div>
