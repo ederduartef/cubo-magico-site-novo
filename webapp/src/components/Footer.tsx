@@ -10,9 +10,9 @@ export function Footer() {
           {/* Top Nav */}
           <div className={styles.topNav}>
             <ul className={styles.navList}>
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Clínicas</a></li>
-              <li><a href="#">Tratamentos</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#empresas">Corporativo</a></li>
+              <li><a href="#profissionais">Profissionais</a></li>
             </ul>
             <div className={styles.langSelector}>
               PT ▾ <span className={styles.menuIcon}><AlignRight size={20} /></span>

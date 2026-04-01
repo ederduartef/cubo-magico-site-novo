@@ -13,7 +13,7 @@ export function Navbar() {
         <div className={styles.rightSection}>
           <nav className={styles.nav}>
             <a href="#servicos" className={styles.navLink}>Serviços</a>
-            <a href="#empresas" className={styles.navLink}>Empresas</a>
+            <a href="#empresas" className={styles.navLink}>Corporativo</a>
             <a href="#profissionais" className={styles.navLink}>Profissionais</a>
           </nav>
 
