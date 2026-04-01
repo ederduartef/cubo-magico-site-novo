@@ -59,38 +59,49 @@
 }
 
 .cardVisual {
-  background-color: #e5eee8;
   border-radius: 1.5rem;
-  padding: 1.5rem;
+  padding: 0;
   height: 380px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
+  background-color: transparent;
 }
 
 .companyImage {
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  right: 1.5rem;
-  bottom: 5.5rem;
-  width: calc(100% - 3rem);
-  height: calc(100% - 7rem);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 72px); /* reserva espaço para o botão amarelo */
   object-fit: cover;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* just a slight subtle shadow for depth */
+  object-position: center top;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .cardAction {
   background-color: var(--accent-yellow);
   padding: 1rem 1.5rem;
-  border-radius: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  margin-top: auto;
+  height: 72px;
+  flex-shrink: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.cardAction:hover {
+  filter: brightness(0.95);
+}
+
+.cardAction:hover .actionIconBtn {
+  transform: rotate(45deg);
 }
 
 .cardActionText {

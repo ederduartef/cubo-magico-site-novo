@@ -23,17 +23,17 @@ export function CompanySolutions() {
               alt="Atendimento Corporativo" 
               className={styles.companyImage} 
             />
-            <div className={styles.cardAction}>
+            <a
+              href="https://wa.me/5531982725880?text=Ol%C3%A1%2C%20sou%20representante%20de%20uma%20empresa%20e%20gostaria%20de%20solicitar%20uma%20proposta%20de%20atendimento%20corporativo%20com%20o%20Cubo%20M%C3%A1gico%20Hub.%20Pode%20me%20ajudar%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.cardAction}
+            >
               <span className={styles.cardActionText}>Solicitar a proposta</span>
-              <a
-                href="https://wa.me/5531982725880?text=Ol%C3%A1%2C%20sou%20representante%20de%20uma%20empresa%20e%20gostaria%20de%20solicitar%20uma%20proposta%20de%20atendimento%20corporativo%20com%20o%20Cubo%20M%C3%A1gico%20Hub.%20Pode%20me%20ajudar%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.actionIconBtn}
-              >
+              <div className={styles.actionIconBtn}>
                 <ArrowUpRight size={20} color="var(--text-main)" />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
           <p className={styles.cardFooterText}>
             Alcance resultados com qualidade de vida de colaboradores a CEOs.
