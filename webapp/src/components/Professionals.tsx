@@ -88,7 +88,7 @@ export function Professionals() {
 
     <section className={styles.section} id="profissionais">
       <div className={styles.container}>
-      <div className={styles.badge}>Profissionais</div>
+      <div className={styles.badge}>PROFISSIONAIS</div>
         {/* Lado esquerdo — Card carrossel */}
 
         

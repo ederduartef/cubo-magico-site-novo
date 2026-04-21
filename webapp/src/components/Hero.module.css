@@ -103,7 +103,7 @@
 .cardLeveza {
   width: 280px;
   height: 280px;
-  background-color: #4D7C8A;
+  background-color: var(--accent-teal);
   top: 40%;
   left: 0;
   z-index: 1;
