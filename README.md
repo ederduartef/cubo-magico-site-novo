@@ -28,26 +28,6 @@ O novo site do **Cubo Mágico Hub** foi desenvolvido com o paradigma de "Design 
 - [Lucide React](https://lucide.dev/) - Coleção de ícones vetoriais modernos.
 - CSS Modules - Estilização limpa baseada em módulos locais.
 
-## 📖 Como rodar este projeto
-
-Siga os passos abaixo para verificar o projeto em sua própria máquina. Você precisará do [Node.js](https://nodejs.org/) instalado.
-
-```bash
-# 1. Clone este repositório
-$ git clone https://github.com/SeuUsuario/cubo-magico-hub.git
-
-# 2. Acesse a pasta do projeto webapp
-$ cd cubo-magico-hub/webapp
-
-# 3. Instale as dependências
-$ npm install
-
-# 4. Inicie o servidor de desenvolvimento
-$ npm run dev
-```
-
-O projeto estará disponível no seu navegador em `http://localhost:5173`.
-
 ## 📁 Estrutura de Diretórios Principal
 
 ```text
