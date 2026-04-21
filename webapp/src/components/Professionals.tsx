@@ -85,10 +85,13 @@ export function Professionals() {
   const p = professionals[current];
 
   return (
+
     <section className={styles.section} id="profissionais">
       <div className={styles.container}>
-
+      <div className={styles.badge}>Profissionais</div>
         {/* Lado esquerdo — Card carrossel */}
+
+        
         <div className={styles.carouselWrapper}>
           <div
             className={`${styles.featuredCard} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}
