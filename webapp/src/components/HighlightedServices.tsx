@@ -87,10 +87,10 @@ export function HighlightedServices() {
               <h3 className={styles.cardTitle}>{s.title}</h3>
               <p className={styles.cardDesc}>{s.desc}</p>
               
-              <div className={styles.cardFooter}>
+              <a href="#profissionais" className={styles.cardFooter}>
                 <span className={styles.exploreLink}>Saiba mais</span>
                 <ArrowRight size={16} className={styles.arrowIcon} />
-              </div>
+              </a>
             </div>
           ))}
         </div>
